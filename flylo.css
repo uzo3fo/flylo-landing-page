@@ -1,0 +1,88 @@
+/* VARIABLES */
+:root{
+    --prifont:'Raleway', sans-serif;
+    --secfont:'Open Sans', sans-serif;
+    --shadow: 0.1em 0.1em 0.1em 0.1em grey;
+}
+/* GENERAL */
+html{
+    box-sizing: border-box;
+}
+body{
+    padding:0;
+    margin: 0;
+    line-height: 1.4;
+}
+.container{
+    display:grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* LEFT SIDE */
+
+.left{
+    background-color: rgb(30, 24, 112);
+}
+.left img{
+    width:100%;
+}
+/* RIGHT SIDE */
+
+header{
+    font-family: var(--prifont);
+}
+
+.right header i{
+    margin-left: 1.5em;
+}
+.right header img{
+    padding-top: 1.5em;
+}
+
+.right header div{
+    position: absolute;
+    top:1.5em;
+    padding-left:30em;
+}
+
+.body{
+    font-family: var(--secfont)
+}
+
+.body h1{
+    padding-top: 5em;
+}
+
+.body p{
+    padding-top: 1em;
+}
+
+.body form{
+    padding-top: 2em;
+}
+label{
+    display: block;
+    padding-bottom: 1em;
+}
+
+input[type=text]{
+    border: 0.5em solid white;
+    border-radius: 0.2em;
+    box-shadow: var(--shadow);
+    padding: 1em;
+}
+
+button{
+    border: 0.5em solid rgb(5, 214, 155);
+    border-radius: 0.2em;
+    box-shadow: var(--shadow);
+    padding: 1em;
+    background-color: rgb(5, 214, 155);
+    color: white;
+}
+
+footer p{
+    text-align: end;
+    text-decoration: underline;
+}
